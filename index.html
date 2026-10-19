@@ -3,92 +3,327 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>BAC Motoristas Freelancer MG</title>
+
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
 body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    padding:0;
-    background:#f4f4f4;
+background:#f5f7fa;
+color:#333;
 }
-header{
-    background:#003366;
-    color:white;
-    text-align:center;
-    padding:40px;
+
+.hero{
+background:linear-gradient(rgba(1,31,75,.8), rgba(1,31,75,.8)),
+url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d');
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+padding:100px 20px;
 }
-section{
-    max-width:1000px;
-    margin:auto;
-    padding:20px;
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
 }
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+background:#25D366;
+color:white;
+padding:15px 30px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+font-size:18px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:50px 20px;
+}
+
+.section-title{
+text-align:center;
+font-size:36px;
+margin-bottom:40px;
+color:#002b5c;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
 .card{
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    margin:15px 0;
-    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.10);
+transition:.3s;
 }
-.whatsapp{
-    display:inline-block;
-    background:#25D366;
-    color:white;
-    padding:12px 20px;
-    text-decoration:none;
-    border-radius:5px;
+
+.card:hover{
+transform:translateY(-5px);
 }
+
+.card h3{
+margin-bottom:15px;
+color:#002b5c;
+}
+
+.sobre{
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.10);
+line-height:1.8;
+}
+
+.diferenciais{
+background:#002b5c;
+color:white;
+padding:60px 20px;
+}
+
+.lista{
+max-width:900px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.item{
+background:rgba(255,255,255,.1);
+padding:20px;
+border-radius:10px;
+}
+
+.contato{
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.10);
+text-align:center;
+}
+
+.contato p{
+font-size:20px;
+margin:15px 0;
+}
+
 footer{
-    text-align:center;
-    padding:20px;
-    background:#003366;
-    color:white;
+background:#001d40;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
+}
+
+.whatsapp-fixo{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:34px;
+}
+.hero p{
+font-size:18px;
+}
 }
 </style>
 </head>
+
 <body>
 
-<header>
-    <h1>BAC Motoristas Freelancer MG</h1>
-    <p>Transporte Executivo • Viagens • Entrega e Busca de Veículos</p>
-</header>
+<section class="hero">
+<h1>BAC Motoristas Freelancer MG</h1>
 
-<section>
-
-<div class="card">
-<h2>Quem Somos</h2>
 <p>
-Oferecemos serviços de motorista freelancer para todo o estado de Minas Gerais,
-com segurança, pontualidade e profissionalismo.
+Transporte Executivo • Viagens Intermunicipais • Motorista Particular
 </p>
-</div>
 
-<div class="card">
-<h2>Serviços</h2>
-<ul>
-<li>Motorista particular</li>
-<li>Transporte executivo</li>
-<li>Viagens intermunicipais</li>
-<li>Entrega e busca de veículos</li>
-<li>Traslado para aeroportos</li>
-</ul>
-</div>
-
-<div class="card">
-<h2>Contato</h2>
-<p>📞 (31) 99800-4881</p>
-<p>📧 bactransportes@gmail.com</p>
-<p>
-<a class="whatsapp" href="https://wa.me/5531998004881">
+<a class="btn"
+href="https://wa.me/5531998004881"
+target="_blank">
 Solicitar Atendimento
 </a>
+</section>
+
+<div class="container">
+
+<h2 class="section-title">
+Quem Somos
+</h2>
+
+<div class="sobre">
+<p>
+A BAC Motoristas Freelancer MG oferece serviços profissionais de motorista
+para todo o Estado de Minas Gerais. Atuamos com segurança,
+pontualidade, discrição e conforto, atendendo clientes particulares,
+executivos e empresas.
 </p>
+
+<p>
+Nosso compromisso é proporcionar uma experiência tranquila e segura
+em deslocamentos urbanos, viagens intermunicipais, transporte executivo
+e serviços personalizados.
+</p>
+</div>
+
+</div>
+
+<div class="container">
+
+<h2 class="section-title">
+Nossos Serviços
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🚘 Motorista Particular</h3>
+<p>Atendimento personalizado para deslocamentos diários e eventuais.</p>
+</div>
+
+<div class="card">
+<h3>💼 Transporte Executivo</h3>
+<p>Serviço voltado para empresários, diretores e profissionais.</p>
+</div>
+
+<div class="card">
+<h3>🛣️ Viagens Intermunicipais</h3>
+<p>Viagens com conforto e segurança para qualquer cidade de Minas Gerais.</p>
+</div>
+
+<div class="card">
+<h3>✈️ Transfer Aeroporto</h3>
+<p>Traslados para aeroportos e rodoviárias.</p>
+</div>
+
+<div class="card">
+<h3>🔑 Entrega de Veículos</h3>
+<p>Busca e entrega de veículos com responsabilidade e segurança.</p>
+</div>
+
+<div class="card">
+<h3>🎉 Eventos e Casamentos</h3>
+<p>Motorista exclusivo para festas, reuniões e eventos sociais.</p>
+</div>
+
+</div>
+
+</div>
+
+<section class="diferenciais">
+
+<h2 class="section-title" style="color:white;">
+Por Que Escolher a BAC?
+</h2>
+
+<div class="lista">
+
+<div class="item">
+✅ Pontualidade
+</div>
+
+<div class="item">
+✅ Atendimento Profissional
+</div>
+
+<div class="item">
+✅ Segurança em Primeiro Lugar
+</div>
+
+<div class="item">
+✅ Atendimento em Todo Estado de MG
+</div>
+
+<div class="item">
+✅ Flexibilidade de Horários
+</div>
+
+<div class="item">
+✅ Conforto e Discrição
+</div>
+
 </div>
 
 </section>
 
+<div class="container">
+
+<h2 class="section-title">
+Área de Atendimento
+</h2>
+
+<div class="sobre">
+<p>
+Atendemos Belo Horizonte, Contagem, Betim,
+Região Metropolitana e todo o Estado de Minas Gerais.
+</p>
+</div>
+
+</div>
+
+<div class="container">
+
+<h2 class="section-title">
+Contato
+</h2>
+
+<div class="contato">
+
+<p>📞 (31) 99800-4881</p>
+
+<p>📧 bactransportes@gmail.com</p>
+
+<br>
+
+<a class="btn"
+href="https://wa.me/5531998004881"
+target="_blank">
+Falar no WhatsApp
+</a>
+
+</div>
+
+</div>
+
 <footer>
-© 2026 BAC Motoristas Freelancer MG
+© 2026 BAC Motoristas Freelancer MG | Todos os direitos reservados.
 </footer>
+
+<a class="whatsapp-fixo"
+href="https://wa.me/5531998004881"
+target="_blank">
+WhatsApp
+</a>
 
 </body>
 </html>
